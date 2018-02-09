@@ -1,4 +1,4 @@
-var imageHost = '/phaser-games/game/'; // github 预览地址
+var imageHost = '/phaser-games/game/images/game/'; // github 预览地址
 
 var game = new Phaser.Game(640, 1136, Phaser.CANVAS, 'gameContainer');
 
@@ -9,7 +9,7 @@ game.myData = {};
 
 game.myState.preload = {
   preload: function() {
-    // game.load.image('preload', imageHost + 'images/preload.gif');
+    // game.load.image('preload', imageHost + 'preload.gif');
     game.stage.backgroundColor = "#fff"; // 游戏背景色
     // 适配
     if (!game.device.desktop) {
@@ -23,28 +23,28 @@ game.myState.preload = {
 
 game.myState.load = {
   preload: function() {
-    game.load.image('clock', imageHost + 'images/clock.png');
-    game.load.image('gamebg', imageHost + 'images/game-bg.jpg'); // 游戏背景
-    game.load.image('iconfinder', imageHost + 'images/iconfinder.png');
-    game.load.spritesheet('dog', imageHost + 'images/dog.png', 266, 360, 2); // 加载需要找到的狗
-    game.load.image('man1', imageHost + 'images/man1.png');
-    game.load.image('man2', imageHost + 'images/man2.png');
-    game.load.image('man3', imageHost + 'images/man3.png');
-    game.load.image('man4', imageHost + 'images/man4.png');
-    game.load.image('man5', imageHost + 'images/man5.png');
-    game.load.image('man6', imageHost + 'images/man6.png');
-    game.load.image('man7', imageHost + 'images/man7.png');
-    game.load.image('man8', imageHost + 'images/man8.png');
-    game.load.image('man9', imageHost + 'images/man9.png');
-    game.load.image('man10', imageHost + 'images/man10.png');
-    game.load.image('man11', imageHost + 'images/man11.png');
-    game.load.image('man12', imageHost + 'images/man12.png');
-    game.load.image('man13', imageHost + 'images/man13.png');
-    game.load.image('man14', imageHost + 'images/man14.png');
-    game.load.image('man15', imageHost + 'images/man15.png');
-    game.load.image('man16', imageHost + 'images/man16.png');
-    game.load.audio('find', imageHost + 'images/find.mp3');
-    game.load.audio('bgmusic', imageHost + 'images/bgmusic.mp3');
+    game.load.image('clock', imageHost + 'clock.png');
+    game.load.image('gamebg', imageHost + 'game-bg.jpg'); // 游戏背景
+    game.load.image('iconfinder', imageHost + 'iconfinder.png');
+    game.load.spritesheet('dog', imageHost + 'dog.png', 266, 360, 2); // 加载需要找到的狗
+    game.load.image('man1', imageHost + 'man1.png');
+    game.load.image('man2', imageHost + 'man2.png');
+    game.load.image('man3', imageHost + 'man3.png');
+    game.load.image('man4', imageHost + 'man4.png');
+    game.load.image('man5', imageHost + 'man5.png');
+    game.load.image('man6', imageHost + 'man6.png');
+    game.load.image('man7', imageHost + 'man7.png');
+    game.load.image('man8', imageHost + 'man8.png');
+    game.load.image('man9', imageHost + 'man9.png');
+    game.load.image('man10', imageHost + 'man10.png');
+    game.load.image('man11', imageHost + 'man11.png');
+    game.load.image('man12', imageHost + 'man12.png');
+    game.load.image('man13', imageHost + 'man13.png');
+    game.load.image('man14', imageHost + 'man14.png');
+    game.load.image('man15', imageHost + 'man15.png');
+    game.load.image('man16', imageHost + 'man16.png');
+    game.load.audio('find', imageHost + 'find.mp3');
+    game.load.audio('bgmusic', imageHost + 'bgmusic.mp3');
   },
   create: function() {
     // this.group = game.add.group();
