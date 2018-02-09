@@ -8,7 +8,7 @@ game.myData = {};
 
 game.myState.preload = {
   preload: function() {
-    // game.load.image('preload', '../images/game/preload.gif');
+    // game.load.image('preload', '/game/images/preload.gif');
     game.stage.backgroundColor = "#fff"; // 游戏背景色
     // 适配
     if (!game.device.desktop) {
@@ -22,28 +22,28 @@ game.myState.preload = {
 
 game.myState.load = {
   preload: function() {
-    game.load.image('clock', '../images/game/clock.png');
-    game.load.image('gamebg', '../images/game/game-bg.jpg'); // 游戏背景
-    game.load.image('iconfinder', '../images/game/iconfinder.png');
-    game.load.spritesheet('dog', '../images/game/dog.png', 266, 360, 2); // 加载需要找到的狗
-    game.load.image('man1', '../images/game/man1.png');
-    game.load.image('man2', '../images/game/man2.png');
-    game.load.image('man3', '../images/game/man3.png');
-    game.load.image('man4', '../images/game/man4.png');
-    game.load.image('man5', '../images/game/man5.png');
-    game.load.image('man6', '../images/game/man6.png');
-    game.load.image('man7', '../images/game/man7.png');
-    game.load.image('man8', '../images/game/man8.png');
-    game.load.image('man9', '../images/game/man9.png');
-    game.load.image('man10', '../images/game/man10.png');
-    game.load.image('man11', '../images/game/man11.png');
-    game.load.image('man12', '../images/game/man12.png');
-    game.load.image('man13', '../images/game/man13.png');
-    game.load.image('man14', '../images/game/man14.png');
-    game.load.image('man15', '../images/game/man15.png');
-    game.load.image('man16', '../images/game/man16.png');
-    game.load.audio('find', '../images/game/find.mp3');
-    game.load.audio('bgmusic', '../images/game/bgmusic.mp3');
+    game.load.image('clock', '/game/images/clock.png');
+    game.load.image('gamebg', '/game/images/game-bg.jpg'); // 游戏背景
+    game.load.image('iconfinder', '/game/images/iconfinder.png');
+    game.load.spritesheet('dog', '/game/images/dog.png', 266, 360, 2); // 加载需要找到的狗
+    game.load.image('man1', '/game/images/man1.png');
+    game.load.image('man2', '/game/images/man2.png');
+    game.load.image('man3', '/game/images/man3.png');
+    game.load.image('man4', '/game/images/man4.png');
+    game.load.image('man5', '/game/images/man5.png');
+    game.load.image('man6', '/game/images/man6.png');
+    game.load.image('man7', '/game/images/man7.png');
+    game.load.image('man8', '/game/images/man8.png');
+    game.load.image('man9', '/game/images/man9.png');
+    game.load.image('man10', '/game/images/man10.png');
+    game.load.image('man11', '/game/images/man11.png');
+    game.load.image('man12', '/game/images/man12.png');
+    game.load.image('man13', '/game/images/man13.png');
+    game.load.image('man14', '/game/images/man14.png');
+    game.load.image('man15', '/game/images/man15.png');
+    game.load.image('man16', '/game/images/man16.png');
+    game.load.audio('find', '/game/images/find.mp3');
+    game.load.audio('bgmusic', '/game/images/bgmusic.mp3');
   },
   create: function() {
     // this.group = game.add.group();
