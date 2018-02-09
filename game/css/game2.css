@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url("./common.css");
+@import url("./components/button.css");
+
+.start-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: url('../images/game/start-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.start-title {
+  width: 65%;
+  margin: .8rem auto .5rem;
+  display: block;
+}
+
+.yellow-btn {
+  width: 40%;
+}
+
+.music-btn {
+  position: absolute;
+  top: .1rem;
+  right: .1rem;
+  width: .3rem;
+  height: .3rem;
+  z-index: 20;
+}
+
+.game-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .game-container canvas {
+  background-color: #fff;
+  background: url('../images/game/game-bg.jpg') no-repeat;
+  background-size: cover;
+} */
+
+.game-over {
+  background: url('../images/game/overbg.png') no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.game-score {
+  background: #fff;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+  border: 3px dashed #1ABC9C;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: .1rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+.game-score .score-label {
+  font-size: .25rem;
+  color: #1ABC9C;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis; /* for Opera */
+  text-overflow: ellipsis; /* for IE */
+}
+
+.game-score .score {
+  color: #1ABC9C;
+  font-size: .3rem;
+}
+
+.best-score-container {
+  min-height: 0.4rem;
+  font-size: 0.12rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  line-height: 0.4rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.score-icon {
+  border-radius: 100px;
+  box-sizing: content-box;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.score-icon img {
+  height: 0.4rem;
+  width: 0.4rem;
+  vertical-align: top;
+}
+
+.best-score {
+  display: inline-block;
+}
+
+.best-score .score-text {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  box-shadow: 0 1px 2px 0 rgba(34, 34, 34, 0.3);
+  line-height: 0.25rem;
+  color: #222;
+  background: white;
+  margin-left: -14px;
+  padding: 0 10px 0 14px;
+  border-radius: 4px;
+  position: relative;
+  z-index: -1;
+  height: 0.25rem;
+}
+
+.score-text .score, 
+.score-text .score-text-rank {
+  margin-left: 6px;
+}

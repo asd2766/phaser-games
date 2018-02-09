@@ -1,0 +1,190 @@
+@charset 'UTF-8';
+/* 样式中 -btn 结尾的 active的样式 */
+[class$="-btn"]:active {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: .8;
+  filter: alpha(opacity=80);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+
+[class$="-btn"].disabled {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+/* 蓝色 - 实心 */
+.blue-btn {
+  background: #4696e7;
+  color: #fff;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 绿色-实心 */
+.green-btn {
+  background: #3ccf8a;
+  color: #fff;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 白色-空心 */
+.plain-white {
+  width: 90%;
+  height: .4rem;
+  background-color: transparent;
+  border: .01rem solid #fff;
+  color: #fff;
+  text-align: center;
+  /* line-height: .4rem; */
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 灰色 - 实心 */
+.grey-btn {
+  background: #999;
+  color: #fff;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 黄色 - 实心 */
+.yellow-btn {
+  background: rgb(255, 184, 55);
+  color: #fff;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 绿色 -- 空心 */
+.plain-green-btn {
+  background: #fff;
+  color: #3ccf8a;
+  border: .01rem solid #3ccf8a;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+
+/* 蓝色 -- 空心 */
+.plain-blue-btn {
+  background: #fff;
+  color: #4696e7;
+  border: .01rem solid #4696e7;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+
+/* orange */
+/* 橘色偏红(#fa885d)-实心 */
+.red-orange-btn {
+  background: #fa885d;
+  color: #fff;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 橘色偏红(#fa885d) -- 空心 */
+.plain-orange-btn {
+  /* background: #fff; */
+  color: #fa885d;
+  border: .01rem solid #fa885d;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
+
+/* 黑色 -- 空心 */
+.plain-black-btn {
+  background: #fff;
+  color: #333;
+  border: .01rem solid #333;
+  font-size: .16rem;
+  width: 90%;
+  height: .4rem;
+  /* line-height: .4rem; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  -moz-border-radius: .05rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}
