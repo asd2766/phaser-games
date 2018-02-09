@@ -9,7 +9,8 @@ game.myData = {};
 
 game.myState.preload = {
   preload: function() {
-    // game.load.image('preload', imageHost + 'preload.gif');
+    game.load.image('loading', imageHost + 'preloader.gif');
+
     game.stage.backgroundColor = "#fff"; // 游戏背景色
     // 适配
     if (!game.device.desktop) {
@@ -23,6 +24,15 @@ game.myState.preload = {
 
 game.myState.load = {
   preload: function() {
+    var preloadSprite = game.add.sprite(game.world.centerX, game.world.centerY, 'loading');
+    preloadSprite.anchor.setTo(0.5, 0.5);
+    game.load.setPreloadSprite(preloadSprite);
+
+    game.load.onLoadComplete.add(function() {
+      $("#gameContainer").hide();
+      $("#startMain").show();
+    });
+
     game.load.image('clock', imageHost + 'clock.png');
     game.load.image('gamebg', imageHost + 'game-bg.jpg'); // 游戏背景
     game.load.image('iconfinder', imageHost + 'iconfinder.png');
