@@ -2,14 +2,15 @@ var imageHost = '/phaser-games/game/images/game/'; // github 预览地址
 
 var game = new Phaser.Game(640, 1136, Phaser.CANVAS, 'gameContainer');
 
-var defaultTime = 10; // 默认倒计时时间
+var defaultTime = 60; // 默认倒计时时间
 
 game.myState = {};
 game.myData = {};
 
 game.myState.preload = {
   preload: function() {
-    game.load.image('loading', imageHost + 'preloader.gif');
+    game.load.image('preloader', imageHost + 'preloader.gif');
+    game.load.image('loading', imageHost + 'loading.gif');
 
     game.stage.backgroundColor = "#fff"; // 游戏背景色
     // 适配
@@ -24,7 +25,7 @@ game.myState.preload = {
 
 game.myState.load = {
   preload: function() {
-    var preloadSprite = game.add.sprite(game.world.centerX, game.world.centerY, 'loading');
+    var preloadSprite = game.add.sprite(game.world.centerX, game.world.centerY, 'preloader');
     preloadSprite.anchor.setTo(0.5, 0.5);
     game.load.setPreloadSprite(preloadSprite);
 
@@ -188,7 +189,7 @@ function ManList() {
     game.myData.total++;
     game.myState.start.scoreText.text = game.myData.total;
     // 找到狗狗了
-    this.dog.bringToTop();
+    // this.dog.bringToTop();
     this.dog.animations.play('find');
 
     // 画个圈圈把狗圈出来
