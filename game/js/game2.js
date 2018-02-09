@@ -9,7 +9,8 @@ game.myData = {};
 
 game.myState.preload = {
   preload: function() {
-    game.load.image('loading', imageHost + 'preloader.gif');
+    game.load.image('preloader', imageHost + 'preloader.gif');
+    game.load.image('loading', imageHost + 'loading.gif');
 
     game.stage.backgroundColor = "#fff"; // 游戏背景色
     // 适配
@@ -24,7 +25,7 @@ game.myState.preload = {
 
 game.myState.load = {
   preload: function() {
-    var preloadSprite = game.add.sprite(game.world.centerX, game.world.centerY, 'loading');
+    var preloadSprite = game.add.sprite(game.world.centerX, game.world.centerY, 'preloader');
     preloadSprite.anchor.setTo(0.5, 0.5);
     game.load.setPreloadSprite(preloadSprite);
 
