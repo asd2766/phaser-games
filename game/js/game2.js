@@ -2,7 +2,7 @@ var imageHost = '/phaser-games/game/images/game/'; // github 预览地址
 
 var game = new Phaser.Game(640, 1136, Phaser.CANVAS, 'gameContainer');
 
-var defaultTime = 10; // 默认倒计时时间
+var defaultTime = 60; // 默认倒计时时间
 
 game.myState = {};
 game.myData = {};
@@ -189,7 +189,7 @@ function ManList() {
     game.myData.total++;
     game.myState.start.scoreText.text = game.myData.total;
     // 找到狗狗了
-    this.dog.bringToTop();
+    // this.dog.bringToTop();
     this.dog.animations.play('find');
 
     // 画个圈圈把狗圈出来
